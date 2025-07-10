@@ -1,18 +1,16 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-import "./contact.css";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import './contact.css';
+
 const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_ipsh5uk",
-      "template_8hsyt8y",
-      form.current,
-      "0JVtTVYN2tlBWZoaQ"
-    );
+    emailjs.sendForm('service_n66ibya', 'template_xyr60ah', form.current, {
+      publicKey: 'hDfOeiTzpTQ2S1YoY',
+    });
     e.target.reset();
   };
 
@@ -22,93 +20,93 @@ const Contact = () => {
       <span className="section__subtitle">Contact Me</span>
 
       <div className="contact__container container grid">
+        {/* Left Side - Talk To Me */}
         <div className="contact__content">
-          <h3 className="contact__title">Talk to me</h3>
+          <h3 className="contact__title" style={{ textAlign: 'center' }}>Talk To Me</h3>
 
           <div className="contact__info">
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon"></i>
-
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">
-                deshmukhsambhajirao9@gmail.com
-              </span>
-
-              <a
-                href="mailto:deshmukhsambhajirao9@gmail.com"
-                className="contact__button" target="_blank"
-              >
-                Write me
+              <span className="contact__card-data">gouravraut1234@gmail.com</span>
+              <a href="mailto:gouravraut1234@gmail.com" className="contact__button">
+                Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
               <i className="bx bxl-whatsapp contact__card-icon"></i>
-
               <h3 className="contact__card-title">WhatsApp</h3>
-              <span className="contact__card-data">+91 81035XXXXX</span>
-
+              <span className="contact__card-data">+91 7416723763</span>
               <a
-                href="https://api.whatsapp.com/send?phone=918103548618&text=Hello, more information!"
-                className="contact__button" target="_blank"
+                href="https://api.whatsapp.com/send?phone=7416723763&text=Hello, more information!"
+                className="contact__button"
               >
-                Write me{" "}
+                Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
-              <i className="bx bxl-telegram contact__card-icon"></i>
-
-              <h3 className="contact__card-title">Telegram</h3>
-              <span className="contact__card-data">@ultra_doge</span>
-
-              <a href="https://t.me/ultra_doge" className="contact__button" target="_blank">
-                Write me
+              <i className="bx bxl-linkedin contact__card-icon"></i>
+              <h3 className="contact__card-title">LinkedIn</h3>
+              <span className="contact__card-data">gourav-raut</span>
+              <a
+                href="https://www.linkedin.com/in/gourav-raut/"
+                className="contact__button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
           </div>
         </div>
 
+        {/* Right Side - Contact Form */}
         <div className="contact__content">
-          <h3 className="contact__title">Write me your project/queries</h3>
+          <h3 className="contact__title" style={{ textAlign: 'center' }}>
+            Write Me Your Project
+          </h3>
+
           <form ref={form} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
               <input
-                type="name"
+                type="text"
                 name="name"
                 className="contact__form-input"
-                placeholder="Enter your name"
+                placeholder="Enter Your Name"
               />
             </div>
+
             <div className="contact__form-div">
-              <label className="contact__form-tag">E-mail</label>
+              <label className="contact__form-tag">Mail</label>
               <input
                 type="email"
                 name="email"
                 className="contact__form-input"
-                placeholder="Insert your email"
+                placeholder="Enter Your Email"
               />
             </div>
 
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag">Query</label>
+              <label className="contact__form-tag">Project</label>
               <textarea
-                name="query"
-                cols="30"
-                rows="10"
+                name="project"
+                cols={30}
+                rows={10}
                 className="contact__form-input"
-                placeholder="Enter your query/request here"
+                placeholder="Write your project"
               ></textarea>
             </div>
-            <button className="button button--flex">
+
+            <button className="button button--flex" type="submit">
               Send Message
               <svg
-              
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"

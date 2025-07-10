@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./qualifications.css";
 const Qualifications = () => {
-  const [toggleState, setToggleState] = useState(0);
+  const [toggleState, setToggleState] = useState(1);
   const toggleTab = (index) => {
     setToggleState(index);
   };
@@ -47,12 +47,12 @@ const Qualifications = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">SSC (GPA : 9.0)</h3>
+                <h3 className="qualification__title">10th-CBSE Percentage <br /> (84.4%)</h3>
                 <span className="qualification__subtitle">
-                  Shri Guru Tegh Bahadur Academy
+                  St'Michaels School 
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 07/2018 - 04/2019
+                  <i className="uil uil-calendar-alt"></i> 2020
                 </div>
               </div>
 
@@ -70,24 +70,24 @@ const Qualifications = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title"> HSC (GPA : 9.5)</h3>
+                <h3 className="qualification__title"> CBSE Percentage <br /> (80%)</h3>
                 <span className="qualification__subtitle">
-                  Shri Guru Tegh Bahadur Academy
+                Bhavans Sri Ramakrishna Vidyalaya
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 07/2019 - 04/2021
+                  <i className="uil uil-calendar-alt"></i> 2022
                 </div>
               </div>
             </div>
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">B.Tech</h3>
+                <h3 className="qualification__title">B.Tech CGPA <br /> (8.89)</h3>
                 <span className="qualification__subtitle">
-                  Parul University
+                  CMR Engineering College
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 2021 - Present
+                  <i className="uil uil-calendar-alt"></i> 2025 - Present
                 </div>
               </div>
 
@@ -105,7 +105,7 @@ const Qualifications = () => {
                 : "qualification__content"
             }
           >
-            <div className="qualification__data">
+            {/* <div className="qualification__data">
               <div></div>
 
               <div>
@@ -179,7 +179,7 @@ const Qualifications = () => {
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
