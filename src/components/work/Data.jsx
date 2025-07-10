@@ -38,7 +38,7 @@ export const projectsData = [
     image: Work6,
     title: "PORTFOLIO(REACT)",
     category: "web",
-    deploymentLink: "",
+    deploymentLink: "https://github.com/bossgghere/Gourav-Portfolio",
   },
 ];
 
