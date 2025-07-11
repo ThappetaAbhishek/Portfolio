@@ -1,17 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.css";
 
 const Header = () => {
   const [Toggle, showMenu] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("theme") === "dark";
+  });
+
+  // Add/remove the .dark-theme class to <body>
+  useEffect(() => {
+    document.body.classList.toggle("dark-theme", darkMode);
+    localStorage.setItem("theme", darkMode ? "dark" : "light");
+  }, [darkMode]);
+
   return (
     <header className="header">
       <nav className="nav container">
         <a href="#home" className="nav__logo">Gourav</a>
 
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
-          <ul className="nav__list grid"> {/* ✅ Changed from <nav> to <ul> */}
+          <ul className="nav__list grid">
             <li className="list__item">
-
               <a href="#home" className="nav__link active-link">
                 <i className="uil uil-estate nav__icon"></i>
                 Home
@@ -57,10 +66,27 @@ const Header = () => {
           <i className="uil uil-times nav__close" onClick={() => showMenu(!Toggle)}></i>
         </div>
 
-        <nav className="nav__toggle" onClick={() => showMenu(!Toggle)}>
-          <i className="uil uil-apps"></i>
-        </nav>
+        {/* Dark mode toggle button */}
+        <button
+          onClick={() => setDarkMode(!darkMode)}
+          className="theme-toggle-btn"
+          style={{
+            fontSize: "1.2rem",
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            marginRight: "1rem",
+            color: "var(--text-color)",
+          }}
+          title="Toggle dark mode"
+        >
+          <i className={`uil ${darkMode ? "uil-sun" : "uil-moon"}`}></i>
+        </button>
 
+        {/* Menu toggle icon */}
+        <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
+          <i className="uil uil-apps"></i>
+        </div>
       </nav>
     </header>
   );
