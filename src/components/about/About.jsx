@@ -17,7 +17,7 @@ const About = () => {
           <Info />
 
           <p className="about__description">
-          I’m a Flutter developer specializing in building efficient, scalable, and visually appealing mobile applications. I focus on delivering smooth user experiences with clean UI and robust performance.
+          Software Developer specialized in AI and ML projects, with hands-on experience in building and deploying models for real-world applications. Skilled in creating intelligent models and user-centric web solutions. Proven track record of delivering innovative, scalable, and efficient technologies that enhance user engagement and drive measurable outcomes.
           </p>
 
           <a download="" href={CV} className="button button--flex">
