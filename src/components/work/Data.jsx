@@ -1,37 +1,21 @@
-import Work1 from "../../assets/coffee.png";
-import Work2 from "../../assets/bird.png";
-import Work3 from "../../assets/att.png";
-import Work5 from "../../assets/doctor.png";
+import Work1 from "../../assets/FVNP.png";
+import Work2 from "../../assets/disease.png";
 import Work6 from "../../assets/portfolio.png";
 
 export const projectsData = [
   {
     id: 1,
     image: Work1,
-    title: "MOCHA MINGLE",
-    category: "app",
-    deploymentLink: "https://github.com/bossgghere/coffee-ui",
+    title: "Fake Number Plate Detection",
+    category: "Web site",
+    deploymentLink: "https://github.com/ThappetaAbhishek/FNPD",
   },
   {
     id: 2,
     image: Work2,
-    title: "FLAPPY-BIRD GAME",
-    category: "app",
-    deploymentLink: "https://github.com/bossgghere/flappy-bird",
-  },
-  {
-    id: 3,
-    image: Work3,
-    title: "Student Information System (SIS)",
-    category: "app",
-    deploymentLink: "https://github.com/bossgghere/dhondi-clone",
-  },
-  {
-    id: 5,
-    image: Work5,
-    title: "DOCTOR-PORTAL(REACT)",
-    category: "web",
-    deploymentLink: "https://github.com/bossgghere/doctor-portal",
+    title: "Pedicting Disease",
+    category: "Web Site",
+    deploymentLink: "https://github.com/ThappetaAbhishek/Predicting-Disease",
   },
   {
     id: 6,

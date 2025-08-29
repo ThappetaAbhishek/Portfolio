@@ -28,8 +28,8 @@ const Contact = () => {
             <div className="contact__card">
               <i className="bx bx-mail-send contact__card-icon"></i>
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">md.parvez9391@gmail.com</span>
-              <a href="mailto:md.parvez9391@gmail.com" className="contact__button">
+              <span className="contact__card-data">abhi41101@gmail.com</span>
+              <a href="mailto:abhi41101@gmail.com" className="contact__button">
                 Write Me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
@@ -38,9 +38,9 @@ const Contact = () => {
             <div className="contact__card">
               <i className="bx bxl-whatsapp contact__card-icon"></i>
               <h3 className="contact__card-title">WhatsApp</h3>
-              <span className="contact__card-data">+91 8328536393</span>
+              <span className="contact__card-data">+91 7995737479</span>
               <a
-                href="https://api.whatsapp.com/send?phone=8328536393&text=Hello, more information!"
+                href="https://api.whatsapp.com/send?phone=7995737479&text=Hello, more information!"
                 className="contact__button"
               >
                 Write Me
@@ -51,9 +51,9 @@ const Contact = () => {
             <div className="contact__card">
               <i className="bx bxl-linkedin contact__card-icon"></i>
               <h3 className="contact__card-title">LinkedIn</h3>
-              <span className="contact__card-data">Mohammed Parvez</span>
+              <span className="contact__card-data">THAPPETA ABHISHEK</span>
               <a
-                href="https://www.linkedin.com/in/mohammed-parvez-3b09b0284/"
+                href="www.linkedin.com/in/thappeta-abhishek-719742255"
                 className="contact__button"
                 target="_blank"
                 rel="noopener noreferrer"

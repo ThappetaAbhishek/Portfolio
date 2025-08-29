@@ -47,9 +47,9 @@ const Qualifications = () => {
           >
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">10th-SSC Percentage <br /> (100%)</h3>
+                <h3 className="qualification__title">10th-SSC Percentage <br /> (98%)</h3>
                 <span className="qualification__subtitle">
-                  TMREIS Balanagar Boys-1 
+                  BOMMA BRILLIANT GRAMMAR
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i> 2020
@@ -70,9 +70,9 @@ const Qualifications = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title"> MPC-Percentage <br /> (84.9%)</h3>
+                <h3 className="qualification__title"> MPC-Percentage <br /> (73%)</h3>
                 <span className="qualification__subtitle">
-                TMR Junior College Balanagar Boys-1
+                SRI CHAITYANYA JR COLLEGE
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i> 2022
@@ -82,7 +82,7 @@ const Qualifications = () => {
 
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">B.Tech CGPA <br /> (8.19)</h3>
+                <h3 className="qualification__title">B.Tech CGPA <br /> (On_going)</h3>
                 <span className="qualification__subtitle">
                   CMR Engineering College
                 </span>
