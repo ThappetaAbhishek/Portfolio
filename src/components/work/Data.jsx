@@ -1,6 +1,7 @@
 import Work1 from "../../assets/FVNP.png";
 import Work2 from "../../assets/disease.png";
-import Work6 from "../../assets/portfolio.png";
+import Work3 from "../../assets/SHA.png";
+import Work4 from "../../assets/portfolio.png";
 
 export const projectsData = [
   {
@@ -18,10 +19,17 @@ export const projectsData = [
     deploymentLink: "https://github.com/ThappetaAbhishek/Predicting-Disease",
   },
   {
-    id: 6,
-    image: Work6,
+    id: 3,
+    image: Work3,
+    title: "Securing Data in Image using SHA & FCC",
+    category: "web site",
+    deploymentLink: "https://github.com/ThappetaAbhishek/SHA-and-FCC",
+  },
+  {
+    id: 4,
+    image: Work4,
     title: "PORTFOLIO(REACT)",
-    category: "web",
+    category: "web site",
     deploymentLink: "https://github.com/bossgghere/Gourav-Portfolio",
   },
 ];
